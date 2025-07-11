@@ -1,0 +1,112 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opération Berguet 2026 - Légion étrangère</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: #111;
+      padding: 30px;
+      color: white;
+      max-width: 800px;
+      border-radius: 10px;
+      overflow-y: auto;
+      max-height: 90vh;
+    }
+    .modal-close {
+      color: red;
+      float: right;
+      cursor: pointer;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="legion_marche.mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas la lecture audio.
+  </audio>
+
+  <header>
+    <img src="logo_legion.png" alt="Logo de l'opération" style="max-width: 300px; display: block; margin: auto;">
+    <h1 style="text-align: center; color: yellow;">Opération Berguet 2026 - Légion étrangère</h1>
+  </header>
+
+  <nav style="text-align: center; margin: 20px 0;">
+    <a href="https://2025cao.github.io/QG-CAO-/" target="_blank">Site de la CAO</a>
+    <a href="#boutique">Boutique</a>
+    <a href="code_honneur.html" target="_blank">Code d'Honneur</a>
+  </nav>
+
+  <section id="photos" style="text-align: center;">
+    <h2>Photos</h2>
+    <div style="display: flex; justify-content: center; gap: 20px;">
+      <img src="sergent_thomas.jpg" alt="Sergent Thomas" style="height: 250px; cursor:pointer;" onclick="document.getElementById('modal-sergent').classList.remove('hidden')">
+      <img src="major_gerald.jpg" alt="Major Gérald" style="height: 250px; cursor:pointer;" onclick="document.getElementById('modal-major').classList.remove('hidden')">
+      <img src="capitaine_legio.jpg" alt="Capitaine Legio" style="height: 250px; cursor:pointer;" onclick="document.getElementById('modal-legio').classList.remove('hidden')">
+    </div>
+  </section>
+
+  <!-- Modale Sergent -->
+  <div id="modal-sergent" class="modal hidden">
+    <div class="modal-content">
+      <span class="modal-close" onclick="document.getElementById('modal-sergent').classList.add('hidden')">&times;</span>
+      <h2>🔰 Le mot du Sergent</h2>
+      <p><strong>Je suis le Sergent Thomas, du 1er Régiment Étranger basé à Aubagne.</strong></p>
+      <p>Fort de nombreuses années de service et de missions menées sur plusieurs théâtres d’opérations extérieures — du Mali à l’Afghanistan, en passant par la Côte d’Ivoire et d'autres que je ne peux nommer — je vous propose aujourd’hui une immersion unique dans le monde qui est le mien : <strong>celui de la Légion étrangère</strong>.</p>
+      <p>Avec <strong>20 légionnaires</strong>, je vous invite à prendre part à une opération d'airsoft d’envergure internationale, en Suède, dans le cadre de <strong>l’Opération Berguet 2026</strong>. Cette mission, que j’ai l’honneur de coordonner aux côtés du <strong>CAO et du capitaine Legio</strong>, a pour but de faire embarquer un détachement de <strong>30 civils sélectionnés</strong>, à bord d’un <strong>A400M militaire affrété spécialement au départ de la base aérienne d’Istres</strong>.</p>
+      <p>La <strong>sélection sera rigoureuse</strong>. Elle se déroulera sur 9 mois, lors des <strong>événements Dominical sur le terrain du 1er RE à Pourrières</strong>. Seuls les plus motivés, les plus solides et les plus fidèles aux valeurs de la Légion auront la possibilité d’embarquer avec nous.</p>
+      <p>Car <strong>honneur, fidélité et transmission</strong> sont les piliers de mon engagement. Cette mission n’est pas un simple jeu : c’est <strong>un moment de transmission, d’exigence et de fraternité</strong>.</p>
+      <p>Ce n’est que le début. Nous visons d’autres grandes opérations : <strong>Border War</strong>, <strong>Opération Irène</strong>, et bien d’autres. La Légion ne recule jamais. Elle s’adapte. Elle rayonne. Et maintenant, <strong>elle vous tend la main</strong>.</p>
+      <p><em>Je vous donne rendez-vous sur le terrain, là où tout commence.</em></p>
+      <p><strong>"Legio Patria Nostra."</strong><br>— Sergent Thomas<br>1er Régiment Étranger</p>
+    </div>
+  </div>
+
+  <!-- Modale Major -->
+  <div id="modal-major" class="modal hidden">
+    <div class="modal-content">
+      <span class="modal-close" onclick="document.getElementById('modal-major').classList.add('hidden')">&times;</span>
+      <h2>🔰 Le mot du Major Gérald</h2>
+      <p><strong>Je suis le Major Gérald de la Légion étrangère.</strong></p>
+      <p>Fort de nombreuses années d’expérience dans les conflits armés, sur divers théâtres d’opérations à travers le monde, j’ai acquis une conviction profonde : <strong>la Légion étrangère est bien plus qu’un simple régiment</strong>. C’est un symbole vivant de puissance, de droiture, d’honneur et de fidélité.</p>
+      <p>Seuls les meilleurs intégreront la <strong>section Air Force de la Légion du 1er R.E</strong> dans le cadre d’une mission inédite : <strong>l’Opération Berguet 2026</strong>. Une opération exceptionnelle par son envergure, sa logistique, et l’investissement humain et matériel de la Légion.</p>
+      <p>Transport stratégique, rations de combat, équipement complet — y compris patchs, uniformes et armement — vous seront fournis dans les conditions les plus proches d’une opération militaire réelle. Rien ne sera laissé au hasard.</p>
+      <p><strong>Mon exigence est totale</strong>. Je veillerai personnellement à ce que chaque participant prenne la pleine mesure de la confiance accordée par la Légion. Cette mission n’est pas un divertissement. C’est un engagement. Une immersion dans un monde exigeant où règnent rigueur, honneur et discipline.</p>
+      <p>Après des décennies passées à protéger les intérêts de la France et de ses ressortissants, je vous ouvre aujourd’hui les portes de notre monde. À vous d’en être digne. Ne trahissez pas notre confiance.</p>
+      <p><strong>Vive la France. Vive la Légion.</strong><br>— Major Gérald</p>
+    </div>
+  </div>
+
+  <!-- Modale Legio -->
+  <div id="modal-legio" class="modal hidden">
+    <div class="modal-content">
+      <span class="modal-close" onclick="document.getElementById('modal-legio').classList.add('hidden')">&times;</span>
+      <h2>🔰 Le mot du Capitaine Legio</h2>
+      <p><strong>Je suis le Capitaine Legio de la CAO</strong>, avec plus de 25 ans d'expérience dans le domaine de l'airsoft. Après avoir participé à de nombreuses opérations à travers l'Europe, c’est un immense honneur de collaborer aujourd’hui avec le Sergent Thomas et la Légion étrangère sur une mission unique.</p>
+      <p><strong>L’Opération Berguet 2026</strong> n’est pas qu’un simple événement : c’est une page d’histoire que nous allons écrire ensemble. À travers cette collaboration sans précédent, la Légion offre à 30 civils triés sur le volet l’opportunité de vivre une immersion militaire complète, dans un cadre d’airsoft tactique et structuré.</p>
+      <p>Je remercie la Légion étrangère, son service de communication, et tous les acteurs logistiques pour la confiance et le soutien. Grâce à eux, nous allons réaliser <strong>un rêve d’enfant</strong>, et le transformer en mission de fraternité et de dépassement.</p>
+      <p><strong>Honneur, fidélité, cohésion, abnégation, respect et maîtrise de soi</strong> seront les piliers de notre engagement. Cette mission en Suède n’est que le début d’une saga internationale. Les meilleurs d’entre vous nous accompagneront peut-être bientôt en République tchèque, aux États-Unis ou au Canada pour des opérations comme <strong>Border War ou Opération Irène</strong>.</p>
+      <p>Bienvenue dans cette aventure. Préparez-vous à marquer l’histoire.</p>
+      <p><strong>Capitaine Legio<br>Commando d’Airsoft Opérationnel</strong></p>
+    </div>
+  </div>
+
+</body>
+</html>
